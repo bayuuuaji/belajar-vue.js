@@ -1,0 +1,2 @@
+const member = { name: 'Bayu Aji', umur: 19, isactive: true, qty: 1, namaDepan: 'Asesiv', namaBelakang:'Lala' }; const vm = new Vue({ el: '#app', data: member, methods: { getName: function(){ return 'Hello '+this.name }, ubahNama:
+function(namaBaru){ this.name = namaBaru } }, computed:{ totalBayar: function(){ return this.qty * 10000 }, namaLengkap: function(){ return this.namaDepan +' ' + this.namaBelakang } } });
